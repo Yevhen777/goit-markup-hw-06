@@ -656,12 +656,14 @@ body {
 	color: var(--background-color);
 	text-transform: uppercase;
 	margin-bottom: 20px;
+	margin-left: 70px;
 }
 
 .footer-icon-list {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	margin-left: 70px;
 }
 
 .footer-icon-bg {
@@ -685,6 +687,7 @@ body {
 
 .footer-icon-item {
 	display: flex;
+	
 }
 .footer-icon-item:not(:last-child) {
 	margin-right: 10px;
@@ -692,9 +695,7 @@ body {
 .footer-svg {
 	fill: var(--background-color);
 }
-.subscription-title {
-	
-display: block;	
+.subscription-title {	
 font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
@@ -704,10 +705,7 @@ text-transform: uppercase;
 margin-bottom: 20px;
 margin-left: 93px;
 }
-.subscription {
 
-
-}
 .input-text {
 	width: 358px;
 	height: 50px;
@@ -722,6 +720,7 @@ margin-left: 93px;
 	margin-left: 93px;
 }
 .button-subscription {
+	/* position: relative; */
 	font-family: Roboto, sans-serif;
 	font-weight: 700;
 	font-size: 16px;
@@ -732,7 +731,7 @@ margin-left: 93px;
 
 	border: none;
 	border-radius: 4px;
-
+    cursor: pointer;
 	transition: background-color var(--animation-duration) var(--timing-function);
 
 	width: 200px;
@@ -740,6 +739,13 @@ margin-left: 93px;
 	display: block;
 	margin-left: 12px;
 }
+.button-subscription:hover,
+.button-subscription:focus {
+	background-color: var(--accent-btn-color);
+}
+/* .button-send {
+	position: absolute;
+} */
 .subscription-form {
 	display: flex;
 	align-items: center;
