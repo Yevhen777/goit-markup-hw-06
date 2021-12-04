@@ -1043,3 +1043,45 @@ display: block;
 	opacity: 0;
 	pointer-events: none;
 }
+.modal-title {
+font-weight: 700;
+font-size: 20px;
+line-height: 1,15;
+text-align: center;
+letter-spacing: 0.03em;	
+color: var(--text-color-main);
+margin-bottom: 30px;
+}
+
+.modal {
+	padding: 40px;
+}
+.modal-input {
+width: 448px;
+height: 40px;
+margin-bottom: 28px;
+border: 1px solid rgba(33, 33, 33, 0.2);
+box-sizing: border-box;
+border-radius: 4px;
+}
+.label-text  {
+font-size: 12px;
+line-height: 1.16;
+letter-spacing: 0.01em;
+color: var(--text-color-secondary);
+margin-bottom: 4px;
+}
+.label-tel {
+font-size: 12px;
+line-height: 1.16;
+letter-spacing: 0.01em;
+color: var(--text-color-secondary);
+margin-bottom: 4px;
+}
+.label-email {
+font-size: 12px;
+line-height: 1.16;
+letter-spacing: 0.01em;
+color: var(--text-color-secondary);
+margin-bottom: 4px;
+}
