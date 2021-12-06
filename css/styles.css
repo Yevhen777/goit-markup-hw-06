@@ -1062,6 +1062,21 @@ margin-bottom: 12px;
 .modal {
 	padding: 40px;
 }
+.user-name-box {
+margin-bottom: 10px;
+
+}
+.svg-input {
+position: relative;	
+}
+
+.input-icon {
+position: absolute;	
+top: 50%;
+transform: translateY(-50%);
+left: 15px;
+
+}
 .modal-input {
 width: 448px;
 height: 40px;
@@ -1069,7 +1084,7 @@ margin-bottom: 10;
 border: 1px solid rgba(33, 33, 33, 0.2);
 box-sizing: border-box;
 border-radius: 4px;
-margin-bottom: 10px;
+
 }
 .label-text  {
 font-size: 12px;
