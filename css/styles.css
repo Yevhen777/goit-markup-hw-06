@@ -747,9 +747,10 @@ body {
 .button-subscription:focus {
 	background-color: var(--accent-btn-color);
 }
-/* .button-send {
-	position: absolute;
-} */
+.footer-svg-icon {
+	margin-left: 10px;
+}
+
 .subscription-form {
 	display: flex;
 	align-items: center;
@@ -1144,5 +1145,21 @@ body {
 	resize: none;
 	margin-bottom: 20px;
 }
-.input-icon {
+.label-check {
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	color: #757575;
+}
+
+.label-check span {
+	color: var(--accent-color);
+}
+
+.modal-check:checked + .checkbox-check {
+	background-image: url(../images/iconcheck2.svg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border: none;
 }
