@@ -560,7 +560,7 @@ body {
 
 .footer-flex {
 	display: flex;
-justify-content: space-between;
+	justify-content: space-between;
 	align-items: baseline;
 }
 
@@ -662,14 +662,12 @@ justify-content: space-between;
 	color: var(--background-color);
 	text-transform: uppercase;
 	margin-bottom: 20px;
-	
 }
 
 .footer-icon-list {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	
 }
 
 .footer-icon-bg {
@@ -693,7 +691,6 @@ justify-content: space-between;
 
 .footer-icon-item {
 	display: flex;
-	
 }
 .footer-icon-item:not(:last-child) {
 	margin-right: 10px;
@@ -701,29 +698,28 @@ justify-content: space-between;
 .footer-svg {
 	fill: var(--background-color);
 }
-.subscription-title {	
-font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.03em;
-color: var(--background-color);
-text-transform: uppercase;
-margin-bottom: 20px;
-
+.subscription-title {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	color: var(--background-color);
+	text-transform: uppercase;
+	margin-bottom: 20px;
 }
 
 .input-text {
 	width: 358px;
 	height: 50px;
-	
+
 	padding-left: 16px;
 	display: block;
-	background: #2F303A;
+	background: #2f303a;
 	border: 1px solid rgba(255, 255, 255, 0.3);
-    box-sizing: border-box;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-	}
+	box-sizing: border-box;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+}
 
 .button-subscription {
 	/* position: relative; */
@@ -737,7 +733,7 @@ margin-bottom: 20px;
 
 	border: none;
 	border-radius: 4px;
-    cursor: pointer;
+	cursor: pointer;
 	transition: background-color var(--animation-duration) var(--timing-function);
 
 	width: 200px;
@@ -758,17 +754,13 @@ margin-bottom: 20px;
 	justify-content: center;
 }
 .subscription-form-text {
-display: flex;
+	display: flex;
 	align-items: center;
-	justify-content: center;	
+	justify-content: center;
 }
 .input-text {
-display: block;
+	display: block;
 }
-
-
-
-
 
 /* Страница 2 */
 
@@ -785,7 +777,6 @@ display: block;
 .text-nav-tree:focus {
 	color: var(--accent-color);
 }
-
 
 /* Кнопки */
 
@@ -884,7 +875,6 @@ display: block;
 .portfolio-work {
 	transition: box-shadow var(--animation-duration) var(--timing-function);
 }
-}
 
 .container-item-title {
 	margin-left: 0;
@@ -920,11 +910,6 @@ display: block;
 .portfolio-list-link {
 	position: relative;
 	overflow: hidden;
-
-	/* display: block;
-	transition-property: var(--background-color);
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .portfolio-title {
@@ -1027,15 +1012,15 @@ display: block;
 }
 .icon-closeblack {
 	box-sizing: border-box;
+	transition: fill var(--animation-duration) var(--timing-function);
 }
-.icon-closeblack:hover, 
+.icon-closeblack:hover,
 .icon-closeblack:focus {
-fill: var(--accent-color);
+	fill: var(--accent-color);
 }
 .modal-close {
 	cursor: pointer;
 }
-
 
 .modal-close {
 	position: absolute;
@@ -1052,47 +1037,46 @@ fill: var(--accent-color);
 	border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-
 .is-hidden {
 	visibility: hidden;
 	opacity: 0;
 	pointer-events: none;
 }
 .modal-title {
-font-weight: 700;
-font-size: 20px;
-line-height: 1,15;
-text-align: center;
-letter-spacing: 0.03em;	
-color: var(--text-color-main);
-margin-bottom: 12px;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1, 15;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--text-color-main);
+	margin-bottom: 12px;
 }
 
 .modal {
 	padding: 40px;
 }
 .user-name-box {
-margin-bottom: 10px;
-
+	margin-bottom: 10px;
 }
 .svg-input {
-position: relative;	
+	position: relative;
 }
 
 .input-icon {
-position: absolute;	
-top: 50%;
-transform: translateY(-50%);
-left: 15px;
-
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 15px;
 }
 .modal-input {
-width: 448px;
-height: 40px;
-margin-bottom: 10;
-border: 1px solid rgba(33, 33, 33, 0.2);
-box-sizing: border-box;
-border-radius: 4px;
+	width: 448px;
+	height: 40px;
+	margin-bottom: 10;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	box-sizing: border-box;
+	border-radius: 4px;
+	transition: fill var(--animation-duration) var(--timing-function);
+	transition: border-color var(--animation-duration) var(--timing-function);
 }
 
 .modal-input:focus + .input-icon {
@@ -1105,52 +1089,50 @@ border-radius: 4px;
 	border-color: var(--accent-color);
 }
 .textarea-text::placeholder {
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.01em;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.01em;
 
-color: rgba(117, 117, 117, 0.5);
-
+	color: rgba(117, 117, 117, 0.5);
 }
-.label-text  {
-font-size: 12px;
-line-height: 1.16;
-letter-spacing: 0.01em;
-color: var(--text-color-secondary);
-margin-bottom: 4px;
+.label-text {
+	font-size: 12px;
+	line-height: 1.16;
+	letter-spacing: 0.01em;
+	color: var(--text-color-secondary);
+	margin-bottom: 4px;
 }
 .label-tel {
-font-size: 12px;
-line-height: 1.16;
-letter-spacing: 0.01em;
-color: var(--text-color-secondary);
-margin-bottom: 4px;
+	font-size: 12px;
+	line-height: 1.16;
+	letter-spacing: 0.01em;
+	color: var(--text-color-secondary);
+	margin-bottom: 4px;
 }
 .label-email {
-font-size: 12px;
-line-height: 1.16;
-letter-spacing: 0.01em;
-color: var(--text-color-secondary);
-margin-bottom: 4px;
+	font-size: 12px;
+	line-height: 1.16;
+	letter-spacing: 0.01em;
+	color: var(--text-color-secondary);
+	margin-bottom: 4px;
 }
 .label-textarea {
-font-size: 12px;
-line-height: 1.16;
-letter-spacing: 0.01em;
-color: var(--text-color-secondary);
-margin-bottom: 4px;
-}	
+	font-size: 12px;
+	line-height: 1.16;
+	letter-spacing: 0.01em;
+	color: var(--text-color-secondary);
+	margin-bottom: 4px;
+}
 .textarea-text {
-width: 100%;
-height: 120px;
-border: 1px solid rgba(33, 33, 33, 0.2);
-box-sizing: border-box;
-border-radius: 4px;
-padding-top: 16px;
-padding-left: 12px;
-resize: none;
-margin-bottom: 20px;
+	width: 100%;
+	height: 120px;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	box-sizing: border-box;
+	border-radius: 4px;
+	padding-top: 16px;
+	padding-left: 12px;
+	resize: none;
+	margin-bottom: 20px;
 }
 .input-icon {
-	
 }
