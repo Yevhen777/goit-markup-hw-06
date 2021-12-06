@@ -1084,8 +1084,15 @@ margin-bottom: 10;
 border: 1px solid rgba(33, 33, 33, 0.2);
 box-sizing: border-box;
 border-radius: 4px;
-
 }
+
+.modal-input:focus + .input-icon {
+	fill: var(--accent-color);
+}
+.modal-input:focus {
+	border-color: var(--accent-color);
+}
+
 .label-text  {
 font-size: 12px;
 line-height: 1.16;
