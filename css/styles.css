@@ -705,7 +705,9 @@ body {
 	letter-spacing: 0.03em;
 	color: var(--background-color);
 	text-transform: uppercase;
-	margin-bottom: 20px;
+}
+.subscription-form {
+	margin-top: 20px;
 }
 
 .input-text {
@@ -1050,6 +1052,14 @@ body {
 	letter-spacing: 0.03em;
 	color: var(--text-color-main);
 	margin-bottom: 12px;
+}
+.input-text::placeholder {
+	font-size: 16px;
+	line-height: 1.25;
+	letter-spacing: 0.03em;
+	display: flex;
+	align-items: center;
+	color: rgba(255, 255, 255, 0.6);
 }
 
 .modal {
