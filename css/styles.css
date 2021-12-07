@@ -294,7 +294,16 @@ body {
 /* Преимущества */
 
 .visually-hidden {
-	display: none;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 .section-info {
 	padding-top: 94px;
@@ -720,7 +729,9 @@ body {
 }
 
 .button-subscription {
-	/* position: relative; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	font-family: Roboto, sans-serif;
 	font-weight: 700;
 	font-size: 16px;
@@ -736,7 +747,6 @@ body {
 
 	width: 200px;
 	height: 50px;
-	display: block;
 	margin-left: 12px;
 }
 .button-subscription:hover,
@@ -1078,12 +1088,14 @@ body {
 .modal-input {
 	width: 448px;
 	height: 40px;
-	margin-bottom: 10;
+	padding-left: 42px;
+	/* margin-bottom: 10px; */
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	box-sizing: border-box;
 	border-radius: 4px;
-	transition: fill var(--animation-duration) var(--timing-function);
-	transition: border-color var(--animation-duration) var(--timing-function);
+	outline: none;
+	transition: fill var(--animation-duration) var(--timing-function),
+		border-color var(--animation-duration) var(--timing-function);
 }
 
 .modal-input:focus + .input-icon {
@@ -1091,6 +1103,7 @@ body {
 }
 .modal-input:focus {
 	border-color: var(--accent-color);
+	border-width: 2px;
 }
 .textarea-text:focus {
 	border-color: var(--accent-color);
@@ -1158,6 +1171,11 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
 	border: none;
+}
+
+.modal-check:focus-within + .checkbox-check {
+	border: 2px solid var(--accent-color);
+	box-sizing: content-box;
 }
 
 .button-subscription-submit {
