@@ -1115,6 +1115,9 @@ body {
 
 	color: rgba(117, 117, 117, 0.5);
 }
+.textarea-text {
+	outline: none;
+}
 .label-text {
 	font-size: 12px;
 	line-height: 1.16;
