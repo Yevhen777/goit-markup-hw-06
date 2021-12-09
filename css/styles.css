@@ -69,11 +69,9 @@ body {
 	display: flex;
 	align-items: center;
 }
-.header-list {
+
+.header-list:not(:last-child) {
 	margin-right: 50px;
-}
-.header-list :last-child {
-	margin-right: 0;
 }
 
 .nav-list {
@@ -762,13 +760,10 @@ body {
 	align-items: center;
 	justify-content: center;
 }
-.subscription-form-text {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
+
 .input-text {
 	display: block;
+	color: var(--background-color);
 }
 
 /* Страница 2 */
@@ -1019,17 +1014,6 @@ body {
 	transform: translate(-50%, -50%);
 	transition: transform var(--animation-duration) var(--timing-function);
 }
-.icon-closeblack {
-	box-sizing: border-box;
-	transition: fill var(--animation-duration) var(--timing-function);
-}
-.icon-closeblack:hover,
-.icon-closeblack:focus {
-	fill: var(--accent-color);
-}
-.modal-close {
-	cursor: pointer;
-}
 
 .modal-close {
 	position: absolute;
@@ -1037,13 +1021,24 @@ body {
 	width: 30px;
 	height: 30px;
 	border-radius: 50%;
-	top: 10px;
-	right: 10px;
+	top: 8px;
+	right: 8px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	background: #ffffff;
 	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.modal-close {
+	box-sizing: border-box;
+	transition: fill var(--animation-duration) var(--timing-function);
+}
+.modal-close:hover,
+.modal-close:focus {
+	fill: var(--accent-color);
+}
+.modal-close {
+	cursor: pointer;
 }
 
 .is-hidden {
@@ -1075,6 +1070,7 @@ body {
 .user-name-box {
 	margin-bottom: 10px;
 }
+
 .svg-input {
 	position: relative;
 }
@@ -1155,13 +1151,21 @@ body {
 	padding-top: 16px;
 	padding-left: 12px;
 	resize: none;
-	margin-bottom: 20px;
+	/* margin-bottom: 20px; */
 }
+.user-name-check {
+	margin-bottom: 30px;
+}
+.user-name-checkbox {
+	margin-bottom: 10px;
+}
+
 .label-check {
 	font-size: 14px;
 	line-height: 1.71;
 	letter-spacing: 0.03em;
 	color: #757575;
+	text-align: center;
 }
 
 .label-check span {
@@ -1182,7 +1186,6 @@ body {
 }
 
 .button-subscription-submit {
-	margin-top: 30px;
 	font-family: Roboto, sans-serif;
 	font-weight: 700;
 	font-size: 16px;
